@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Password Generator</h1>
+      <div class="info-button">
+        <p>Info</p>
+      </div>
+      <form id="form">
+        <select id="length">
+          <option value="0">Choose length</option>
+          <option id="short" value="short">Short (3-5 char)</option>
+          <option id="medium" value="medium">Medium (6-8 char)</option>
+          <option id="long" value="long">Long (9-12 char)</option>
+          <option id="extreme" value="extreme">Extreme (18-20 char)</option>
+        </select>
+        <select id="difficulty">
+          <option value="0">Choose difficulty</option>
+          <option id="easy" value="easy">easy</option>
+          <option id="normal" value="normal">medium</option>
+          <option id="hard" value="hard">hard</option>
+        </select>
+        <button type="submit">Generate</button>
+      </form>
+      <div class="done-password-container">
+        <p class="done-password-line">
+          Your generated password:
+          <span class="done-password">Generate a password!</span>
+        </p>
+      </div>
+    </div>
+    <div class="info">
+      <h3>Easy</h3>
+      <p>Only lowercase characters and numbers 0-9.</p>
+      <h3>Medium</h3>
+      <p>Uppercase, lowercase characters and numbers 0-9.</p>
+      <h3>Hard</h3>
+      <p>
+        Uppercase, lowercase characters, numbers 0-9 and special characters.
+      </p>
+      <p class="close-info">Confirm</p>
+    </div>
+  </body>
+</html>

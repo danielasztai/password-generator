@@ -1,0 +1,14 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Daniel Asztai",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
